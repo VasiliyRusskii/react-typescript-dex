@@ -1,0 +1,39 @@
+@import "src/assets/stylesheets/_colors.sass"
+
+.Input
+  display: flex
+  flex-direction: column
+
+  div
+    input
+      font-family: AvenirLTProMedium, sans-serif
+      font-size: 14px
+      background: $lightestGrey1
+      border-radius: 4px
+      border: 0
+      width: 360px
+      height: 40px
+      color: $darkGrey
+      padding: 8px 0 8px 12px
+
+
+      &:hover
+        background: $lightestGrey
+
+      &:focus
+        box-shadow: 0 0 5px $lightestGrey2
+        border: 23px
+
+      &:disabled
+        background: $lightestGrey1
+        color: $lightestGrey
+
+  label
+    font-family: AvenirLTProMedium, sans-serif
+    font-size: 14px
+    color: $grey
+    margin-bottom: 8px
+    line-height: 24px
+
+
+.Error
